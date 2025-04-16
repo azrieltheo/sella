@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ini penting buat mobile -->
+  <title>Ejekan Lucu</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+      border: none;
+    }
+
+    #yes {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    #no {
+      background-color: #f44336;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sella belum mandi, mesti bau 😝</h1>
+  <button id="yes">Yes</button>
+  <button id="no">No</button>
+
+  <script>
+    const noButton = document.getElementById('no');
+    const yesButton = document.getElementById('yes');
+
+    noButton.addEventListener('mouseenter', () => {
+      const x = Math.floor(Math.random() * (window.innerWidth - 100));
+      const y = Math.floor(Math.random() * (window.innerHeight - 50));
+      noButton.style.left = x + 'px';
+      noButton.style.top = y + 'px';
+    });
+
+    yesButton.addEventListener('click', () => {
+      window.location.href = 'mandi.html';
+    });
+  </script>
+</body>
+</html>

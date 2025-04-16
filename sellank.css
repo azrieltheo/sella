@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fffbe6;
+}
+
+.arrow {
+  font-size: 40px;
+  margin: 20px 0;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.img-container {
+  margin-top: 30px;
+}
+
+.img-container img {
+  width: 80px;
+  height: auto;
+}
